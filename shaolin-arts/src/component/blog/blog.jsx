@@ -13,7 +13,7 @@ const Blog = () => {
   const [newBlog, setNewBlog] = useState({ headline: "", date: "", text: "", fullText: "" });
   const [loggedInUser, setLoggedInUser] = useState(JSON.parse(localStorage.getItem("user")));
 
-  // Fetch blogs from the server
+  
   useEffect(() => {
     const fetchBlogs = async () => {
       const response = await axiosInstance.get("/blogs");
@@ -22,7 +22,7 @@ const Blog = () => {
     fetchBlogs();
   }, []);
 
-  // Monitor localStorage for logout
+ 
   useEffect(() => {
     const handleStorageChange = () => {
       setLoggedInUser(JSON.parse(localStorage.getItem("user")));
@@ -30,7 +30,7 @@ const Blog = () => {
 
     window.addEventListener("storage", handleStorageChange);
 
-    // Cleanup listener on unmount
+    
     return () => {
       window.removeEventListener("storage", handleStorageChange);
     };
@@ -117,7 +117,7 @@ const Blog = () => {
         ))}
       </div>
 
-      {/* Read More Modal */}
+      
       <Modal show={show} onHide={handleClose} centered>
         <Modal.Header>
           <Modal.Title>{selectedBlog?.headline}</Modal.Title>
@@ -131,7 +131,7 @@ const Blog = () => {
         </Modal.Footer>
       </Modal>
 
-      {/* Edit Blog Modal */}
+     
       <Modal show={editShow} onHide={handleEditClose} centered>
         <Modal.Header closeButton>
           <Modal.Title>Edit Blog</Modal.Title>
@@ -191,7 +191,7 @@ const Blog = () => {
         </Modal.Footer>
       </Modal>
 
-      {/* Add New Blog Modal */}
+      
       <Modal show={addShow} onHide={handleAddClose} centered>
         <Modal.Header closeButton>
           <Modal.Title>Add New Blog</Modal.Title>
