@@ -19,7 +19,7 @@ export const ShaolinMasters = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
-    // Check if the user is logged in
+   
     const user = JSON.parse(localStorage.getItem('user'));
     setIsLoggedIn(!!user);
   }, []);

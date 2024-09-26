@@ -31,7 +31,7 @@ const Registration = () => {
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-    setErrors({ ...errors, [e.target.name]: '' }); // Clear error on change
+    setErrors({ ...errors, [e.target.name]: '' }); 
   };
 
   const handleImageChange = (e) => {
@@ -43,31 +43,31 @@ const Registration = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/; // Password validation regex
 
-    // First Name Validation
+    
     if (!formData.firstName) {
       newErrors.firstName = 'First Name is required';
     }
 
-    // Last Name Validation
+   
     if (!formData.lastName) {
       newErrors.lastName = 'Last Name is required';
     }
 
-    // Email Validation
+    
     if (!formData.email) {
       newErrors.email = 'Email is required';
     } else if (!emailRegex.test(formData.email)) {
       newErrors.email = 'Invalid email format';
     }
 
-    // Password Validation
+    
     if (!formData.password) {
       newErrors.password = 'Password is required';
     } else if (!passwordRegex.test(formData.password)) {
       newErrors.password = 'Password must be at least 8 characters long, and contain at least one uppercase letter, one lowercase letter, one number, and one special character';
     }
 
-    // Confirm Password Validation
+    
     if (!formData.confirmPassword) {
       newErrors.confirmPassword = 'Confirm Password is required';
     } else if (formData.confirmPassword !== formData.password) {
