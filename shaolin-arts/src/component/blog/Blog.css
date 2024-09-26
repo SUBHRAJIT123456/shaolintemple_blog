@@ -1,0 +1,96 @@
+.blog-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.blog-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e6e6e6;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-family: 'Merriweather', serif;
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.text-muted {
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.blog-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
+}
+
+.btn-link {
+  font-weight: 500;
+  color: white;
+  text-decoration: underline;
+  background-color: #007bff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.btn-link:hover {
+  color: #f1f1f1;
+  background-color: #0056b3;
+}
+
+.edit-btn,
+.delete-btn {
+  border-radius: 5px;
+}
+
+.edit-btn:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background-color: #d9534f;
+  color: #fff;
+}
+
+.input-field {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.modal-body {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.modal-footer button {
+  border-radius: 5px;
+}

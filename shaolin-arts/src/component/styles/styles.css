@@ -1,0 +1,18 @@
+.style-page-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .style-image {
+    width: 400px; 
+    height: 300px; 
+    object-fit: cover; 
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+  }
+  

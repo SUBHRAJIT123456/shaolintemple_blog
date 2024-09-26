@@ -1,0 +1,29 @@
+
+.custom-navbar {
+  background-color: #4b2e0d !important; 
+}
+
+.custom-navbar .nav-link,
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-dropdown-item {
+  color: white !important;
+}
+
+.navbar .dropdown-menu a {
+  color: #4b2e0d !important; 
+}
+
+.navbar .dropdown-menu a:hover {
+  color: #ffffff !important; 
+  background-color: #4b2e0d; 
+}
+.custom-navbar {
+  background-color: #333; 
+}
+
+.custom-carousel .carousel-caption {
+  background: rgba(0, 0, 0, 0.5); 
+  padding: 15px;
+}
+
+
